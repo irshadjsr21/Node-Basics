@@ -1,4 +1,13 @@
 extends layout
 
 block content
-    h1.text-center Home
+    h1.text-center Articles
+    br
+
+    if (articles.length)
+        ul.list-group
+        each article in articles
+            li.list-group-item
+                a(href="/article/"+article._id).text-dark= article.title
+    else
+        .alert.alert-info No Articles

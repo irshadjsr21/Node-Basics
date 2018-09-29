@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    h1.text-center Add Article
+    form(action="/article/add", method="post")
+        .form-group
+            label(for="title") Title 
+            input(type="text", name="title").form-control
+        .form-group
+            label(for="body") Body
+            textarea(name="body").form-control
+        input(type="submit", value="Submit").btn.btn-primary

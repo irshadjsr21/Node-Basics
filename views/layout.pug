@@ -12,24 +12,15 @@ html
                 ul.navbar-nav.mr-auto
                     li.nav-item
                         a.nav-link(href='/') Home
-                    if user
-                        li.nav-item
+                    li.nav-item
                             a.nav-link(href='/article/add') Add Article
-                ul.navbar-nav.ml-auto
-                    if user
-                        li.nav-item
-                            a.nav-link(href='/user/logout') Logout
-                    else
-                        li.nav-item
-                            a.nav-link(href='/user/register') Register
-                        li.nav-item
-                            a.nav-link(href='/user/login') Login
         .container
             block content
         br
         hr
         footer
-            p Copyright &copy; 2018
+            p.text-center Copyright &copy; 2018
         script(src="/dist/jquery.min.js")
         script(src="/dist/popper.min.js")
+        script(src="/dist/main.js")
         script(src="/dist/bootstrap/js/bootstrap.min.js")

@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    
+    if article
+        .card.mb-2
+            h1.card-header.text-center #{article.title}
+            .card-body #{article.body}
+        a(href="/article/edit/"+article._id).btn.btn-primary Edit
+        a(href="#", data-id= article._id).delete-article.btn.btn-danger Delete
+    else
+        .alert.alert-danger No Article Found
