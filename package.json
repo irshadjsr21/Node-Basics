@@ -1,0 +1,33 @@
+{
+  "name": "basics2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irshadjsr21/Node-Basics.git"
+  },
+  "author": "Irshad Ansari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/irshadjsr21/Node-Basics/issues"
+  },
+  "homepage": "https://github.com/irshadjsr21/Node-Basics#readme",
+  "dependencies": {
+    "bcryptjs": "*",
+    "body-parser": "*",
+    "connect-flash": "*",
+    "express": "*",
+    "express-messages": "*",
+    "express-session": "*",
+    "express-validator": "*",
+    "mongoose": "*",
+    "passport": "*",
+    "passport-local": "*",
+    "pug": "*"
+  },
+  "devDependencies": {}
+}
